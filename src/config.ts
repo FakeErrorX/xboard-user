@@ -11,9 +11,9 @@ const getGA = () => {
   }
 
   switch (window.location.hostname) {
-    case "abc.gfwnetwork.com":
+    case "proxybd.com":
       return "G-HSJEER5NF4";
-    case "beta.v2b.rip":
+    case "www.proxybd.com":
       return "G-D6GDYEWSQT";
     default:
       return "";
@@ -31,7 +31,7 @@ const config: DefaultConfigProps = {
   background_url: "https://unsplash.com/random",
   description: "天下武功 唯快不破",
   logo: "",
-  api: "https://sub.crosswalltech.com",
+  api: "https://api.proxybd.com",
   languages: ["zh-CN", "en-US"],
   googleAnalytics: {
     measurementId: getGA()
