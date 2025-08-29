@@ -34,7 +34,7 @@ const AuthFooter: React.FC = () => {
       >
         <Typography variant="subtitle2" color="secondary" component="span">
           <AppTrans i18nKey={"auth.footer.copyright"} tOptions={{ date }}>
-            <Link href="https://github.com/star-horizon" target="_blank" color="secondary" underline="hover" />
+            <Link href="https://proxybd.com" target="_blank" color="secondary" underline="hover" />
           </AppTrans>
         </Typography>
 

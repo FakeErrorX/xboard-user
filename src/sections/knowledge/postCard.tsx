@@ -1,7 +1,7 @@
 import React from "react";
 
 // third-party
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useTranslation } from "react-i18next";
 
 // material-ui

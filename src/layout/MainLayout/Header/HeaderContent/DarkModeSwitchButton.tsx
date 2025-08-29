@@ -143,7 +143,7 @@ const DarkModeSwitchButton: React.FC = () => {
                         <Stack direction={"row"} spacing={2} alignItems={"center"}>
                           <Brightness6OutlinedIcon className={classes.icon} />
                           <Typography variant="h6" className={classes.listItemTextTypography} noWrap>
-                            <Trans i18nKey={"layout.header.dark-mode-switch.follow-system"}>跟随系统</Trans>
+                            <Trans i18nKey={"layout.header.dark-mode-switch.follow-system"}>Follow System</Trans>
                           </Typography>
                         </Stack>
                       </ListItemButton>
@@ -153,7 +153,7 @@ const DarkModeSwitchButton: React.FC = () => {
                         <Stack direction={"row"} spacing={2} alignItems={"center"}>
                           <AccessTimeOutlinedIcon className={classes.icon} />
                           <Typography variant="h6" className={classes.listItemTextTypography} noWrap>
-                            <Trans i18nKey={"layout.header.dark-mode-switch.follow-times"}>跟随时间</Trans>
+                            <Trans i18nKey={"layout.header.dark-mode-switch.follow-times"}>Follow Time</Trans>
                           </Typography>
                         </Stack>
                       </ListItemButton>
@@ -163,7 +163,7 @@ const DarkModeSwitchButton: React.FC = () => {
                         <Stack direction={"row"} spacing={2} alignItems={"center"}>
                           <Brightness5OutlinedIcon className={classes.icon} />
                           <Typography variant="h6" className={classes.listItemTextTypography} noWrap>
-                            <Trans i18nKey={"layout.header.dark-mode-switch.always-light"}>始终浅色</Trans>
+                            <Trans i18nKey={"layout.header.dark-mode-switch.always-light"}>Always Light</Trans>
                           </Typography>
                         </Stack>
                       </ListItemButton>
@@ -173,7 +173,7 @@ const DarkModeSwitchButton: React.FC = () => {
                         <Stack direction={"row"} spacing={2} alignItems={"center"}>
                           <Brightness4OutlinedIcon className={classes.icon} />
                           <Typography variant="h6" className={classes.listItemTextTypography} noWrap>
-                            <Trans i18nKey={"layout.header.dark-mode-switch.always-dark"}>始终暗色</Trans>
+                            <Trans i18nKey={"layout.header.dark-mode-switch.always-dark"}>Always Dark</Trans>
                           </Typography>
                         </Stack>
                       </ListItemButton>

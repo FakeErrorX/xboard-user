@@ -169,7 +169,7 @@ const api = createApi({
           ...(result?.plan_id !== null ? [{ type: "Plan" as const, id: result?.plan!.id }] : [])
         ]
       }),
-      // 0: 未支付的订单数 1: 未处理的工单数 2: 邀请的用户数
+      // 0: unpaid orders count 1: unprocessed tickets count 2: invited users count
       getUserStat: builder.query<number[], void>({
         query: () => ({
           url: "/user/getStat",

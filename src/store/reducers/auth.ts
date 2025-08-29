@@ -1,4 +1,4 @@
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // types
 import { AuthProps, AuthActionProps } from "@/types/auth";

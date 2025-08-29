@@ -23,7 +23,7 @@ import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import { useUnmountedRef } from "ahooks";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import OtpInput from "react18-input-otp";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -323,7 +323,7 @@ const AuthForgotPassword = () => {
                     {isSubmitting ? (
                       <CircularProgress size={24} />
                     ) : (
-                      <Trans i18nKey={"forgot_password.submit"}>重置密码</Trans>
+                      <Trans i18nKey={"forgot_password.submit"}>Reset Password</Trans>
                     )}
                   </Button>
                 </AnimateButton>

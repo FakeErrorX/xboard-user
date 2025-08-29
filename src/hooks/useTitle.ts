@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useTranslation } from "react-i18next";
 
 // project imports

@@ -18,14 +18,14 @@ const usePlanDetail = ({ id }: PlanDetailContextProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [couponCode, setCouponCode] = useState<Coupon | null>(null);
 
-  // 请求完成后，自动选择第一个周期
+  // After request completion, automatically select the first period
   useEffect(() => {
     if (planQuery.data && !period) {
       setPeriod(getFirstPayment(planQuery.data));
     }
   }, [planQuery.data, period]);
 
-  // 选择的原始套餐价格
+  // Selected original plan price
   const originPrice = useMemo(() => {
     if (!planQuery.data) {
       return -1;
@@ -43,16 +43,16 @@ const usePlanDetail = ({ id }: PlanDetailContextProps) => {
     return price / 100;
   }, [planQuery.data, period]);
 
-  // 使用优惠券后的价格
+  // Price after using coupon
   const price = useMemo(() => {
     if (!couponCode) {
-      // 无优惠券
+      // No coupon
       return originPrice;
     } else if (couponCode.type === 1) {
-      // 金额抵扣
+      // Amount deduction
       return originPrice - couponCode.value / 100;
     } else if (couponCode.type === 2) {
-      // 折扣
+      // Discount
       return originPrice * (1 - couponCode.value / 100);
     } else {
       return -1;

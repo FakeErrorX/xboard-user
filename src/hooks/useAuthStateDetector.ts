@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // project imports
 import { useDispatch, useSelector } from "@/store";

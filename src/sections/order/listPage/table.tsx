@@ -58,7 +58,7 @@ const Table: React.FC = () => {
         width: 180,
         type: "number",
         valueGetter: (params) => params.row.total_amount / 100,
-        valueFormatter: (params) => `${params.value.toFixed(2)} CNY`
+        valueFormatter: (params) => `${params.value.toFixed(2)} BDT`
       },
       {
         field: "period",

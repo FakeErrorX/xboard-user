@@ -44,7 +44,7 @@ const Footer = () => {
     <Stack direction="row" className={classes.root}>
       <Typography variant="caption">
         <AppTrans i18nKey={"layout.footer.copyright"} tOptions={{ date }}>
-          <Link href="https://github.com/star-horizon" target="_blank" color="textPrimary" underline="hover" />
+          <Link href="https://proxybd.com" target="_blank" color="textPrimary" underline="hover" />
         </AppTrans>
       </Typography>
       <Stack spacing={1.5} direction="row" className={classes.right}>

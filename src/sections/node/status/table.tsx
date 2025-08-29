@@ -3,7 +3,7 @@ import React, { useMemo } from "react";
 // third-party
 import { useTranslation } from "react-i18next";
 import dayjs from "dayjs";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // material-ui
 import { Box, Chip, Stack } from "@mui/material";

@@ -1,14 +1,16 @@
-import React, { useMemo, useState } from "react";
+import React, { lazy, useMemo, useState } from "react";
 
-// third-party
-import ReactApexChart from "react-apexcharts";
+// third-party (lazy loaded for better performance)
+const ReactApexChart = lazy(() => import("react-apexcharts"));
 import dayjs from "dayjs";
-import lodash from "lodash-es";
+import * as lodash from "lodash-es";
 import { filesize } from "filesize";
 import { useTranslation } from "react-i18next";
 
 // material-ui
 import { useTheme } from "@mui/material/styles";
+import { Suspense } from "react";
+import { CircularProgress, Box } from "@mui/material";
 
 // project imports
 import MainCard from "@/components/MainCard";
@@ -178,7 +180,13 @@ const TrafficChart: React.FC = () => {
 
   return (
     <MainCard title={t("traffic.chart.title").toString()} divider={false}>
-      <ReactApexChart options={options} series={series} type="area" height={280} />
+      <Suspense fallback={
+        <Box display="flex" justifyContent="center" alignItems="center" height={280}>
+          <CircularProgress />
+        </Box>
+      }>
+        <ReactApexChart options={options} series={series} type="area" height={280} />
+      </Suspense>
     </MainCard>
   );
 };

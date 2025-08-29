@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // material-ui
 import { IconButton, Stack, TextField } from "@mui/material";

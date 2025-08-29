@@ -35,7 +35,7 @@
       }
     },
     "footer": {
-      "copyright": "© {{date}} <0>CROSSWALL NETWORK</0> All Rights Reserved",
+      "copyright": "© {{date}} <0>ProxyBD</0> All Rights Reserved",
       "contact-us": "Contact Us",
       "privacy-policy": "Privacy",
       "terms-of-service": "Terms"
@@ -135,7 +135,7 @@
       "error_null_token": "Verification token cannot be empty"
     },
     "footer": {
-      "copyright": "© {{date}} <0>CROSSWALL NETWORK</0> All Right Reserved.",
+      "copyright": "© {{date}} <0>ProxyBD</0> All Right Reserved.",
       "links": {
         "terms": "Terms of Service",
         "privacy": "Privacy Policy"
@@ -193,7 +193,7 @@
     "alert": {
       "pending-order": "You have {{count}} pending orders, please pay in time.",
       "pending-order_one": "You have 1 pending order, please pay in time.",
-      "pending-order-action": "查看订单"
+      "pending-order-action": "View Orders"
     }
   },
   "maintenance": {
@@ -254,7 +254,7 @@
       },
       "period-select-card": {
         "title": "Payment period",
-        "price": "￥ {{price}}",
+        "price": "৳ {{price}}",
         "period_onetime_price": "Disposable Payment",
         "period_month_price": "Pay Monthly",
         "period_quarter_price": "Pay Quarterly",
@@ -271,7 +271,7 @@
       },
       "order-info-card": {
         "title": "Order info",
-        "price": "￥ {{price}}",
+        "price": "৳ {{price}}",
         "coupon": "Coupon: {{name}}",
         "total": "Total price",
         "button": "Create Order"
@@ -317,7 +317,7 @@
         "order-status-value_paid": "paid",
         "order-status-value_cancelled": "cancelled",
         "order-amount": "Order amount",
-        "price": "{{value}} CNY",
+        "price": "{{value}} BDT",
         "coupon-amount": "Discounted price",
         "subscription-deduct-amount": "Old subscription deduction",
         "cancel-tooltip": "Cancel order",
@@ -387,7 +387,7 @@
     "my-invite": {
       "invitation-card": {
         "title": "My Invitation",
-        "currency": "CNY",
+        "currency": "BDT",
         "description": "Current Remaining Commission",
         "helperText": "Invite friends to register, you and your friends will get invitation rewards.",
         "transfer-button": "Transfer",
@@ -398,14 +398,14 @@
           "transfer-amount_label": "Transfer Amount",
           "cancel-button": "Cancel",
           "confirm-button": "Confirm",
-          "validation_min": "The minimum withdrawal amount is {{count}} CNY",
-          "validation_max": "The maximum withdrawal amount is {{count}} CNY",
+          "validation_min": "The minimum withdrawal amount is {{count}} BDT",
+          "validation_max": "The maximum withdrawal amount is {{count}} BDT",
           "validation_required": "Please enter the withdrawal amount."
         },
         "withdraw-button": "Withdraw",
         "withdraw-dialog": {
           "title": "Promotion commission withdrawal",
-          "info": "{{amount}} CNY can be withdrawn, and will be deducted from the promotion commission after withdrawal.",
+          "info": "{{amount}} BDT can be withdrawn, and will be deducted from the promotion commission after withdrawal.",
           "withdraw-account_label": "Withdrawal account",
           "withdraw-method_label": "Withdrawal method",
           "withdraw-amount_label": "Withdrawal amount",
@@ -422,9 +422,9 @@
         "commission-rate": "Commission rate",
         "commission-rate-value": "{{rate}} %",
         "commission-confirming": "Commission to be confirmed",
-        "commission-confirming-value": "{{count}} CNY",
+        "commission-confirming-value": "{{count}} BDT",
         "commission-total": "Cumulative commission",
-        "commission-total-value": "{{count}} CNY"
+        "commission-total-value": "{{count}} BDT"
       },
       "invite-codes-table": {
         "title": "My invitation code",
@@ -447,7 +447,7 @@
       "get-amount_description": "Earned commission is the commission you earn after a user purchases an item.",
       "created-at_header": "Created At",
       "created-at_description": "The creation time is the time when the commission is generated in the system.",
-      "amount-value": "{{value}} CNY"
+      "amount-value": "{{value}} BDT"
     }
   },
   "profile": {
@@ -469,9 +469,9 @@
       "title": "My Wallet",
       "table": {
         "balance_key": "Balance",
-        "balance_value": "{{value}} CNY",
+        "balance_value": "{{value}} BDT",
         "commission_balance_key": "Promotion commission",
-        "commission_balance_value": "{{value}} CNY"
+        "commission_balance_value": "{{value}} BDT"
       }
     },
     "change-password-card": {

@@ -1,5 +1,5 @@
 import { forwardRef, CSSProperties, ReactNode, Ref } from "react";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // material-ui
 import { useTheme } from "@mui/material/styles";
@@ -40,7 +40,7 @@ export interface MainCardProps extends KeyedObject {
   modal?: boolean;
 }
 
-const useStyles = makeStyles<MainCardProps>({
+const useStyles = makeStyles<Omit<MainCardProps, 'children'>>({
   name: "MainCard"
 })((theme, { border = true, shadow, boxShadow, modal = false }) => ({
   card: {

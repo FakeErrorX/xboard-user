@@ -1,12 +1,10 @@
 import { Resource } from "i18next";
 
 // language resources
-import zhCn from "./zh-cn";
-import enUs from "./en-us";
+import en from "./en";
 
 const resources: Resource = {
-  "zh-CN": zhCn,
-  "en-US": enUs
+  "en": en
 };
 
 export default resources;

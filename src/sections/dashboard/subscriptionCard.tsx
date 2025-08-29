@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 
 // third-party
 import dayjs from "dayjs";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { Trans, useTranslation } from "react-i18next";
 
 // material-ui

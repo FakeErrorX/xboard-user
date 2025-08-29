@@ -1,5 +1,5 @@
 import React from "react";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 
 // material-ui
 import { Dialog, DialogContent, DialogTitle, InputAdornment } from "@mui/material";

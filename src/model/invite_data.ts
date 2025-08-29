@@ -15,10 +15,10 @@ export enum InviteCodeStatus {
 export default interface InviteData {
   codes: InviteCodeData[];
   stat: {
-    0: number; // 已注册用户数
-    1: number; // 累计获得佣金
-    2: number; // 确认中的佣金
-    3: number; // 佣金比例
-    4: number; // 当前剩余佣金
+    0: number; // Registered users count
+    1: number; // Total commission earned
+    2: number; // Commission pending confirmation
+    3: number; // Commission rate
+    4: number; // Current remaining commission
   };
 }

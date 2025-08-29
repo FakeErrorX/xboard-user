@@ -72,7 +72,7 @@ const OrderInfoCard: React.FC = () => {
             enqueueSnackbar(t("notice::order-created").toString(), {
               variant: "success"
             });
-            navigate(`/order/${res}`); // 跳转订单结算页面
+            navigate(`/order/${res}`); // Navigate to order settlement page
           })
           .catch((err) => {
             console.error(err);

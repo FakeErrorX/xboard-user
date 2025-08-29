@@ -2,10 +2,10 @@ import { PaymentPeriod } from "@/types/plan";
 import Plan from "@/model/plan";
 
 export enum OrderStatus {
-  PENDING = 0, // 未支付
-  PAID = 1, // 已支付
-  CANCELLED = 2, // 已取消
-  FINISHED = 3 // 已完成
+  PENDING = 0, // Unpaid
+  PAID = 1, // Paid
+  CANCELLED = 2, // Cancelled
+  FINISHED = 3 // Completed
 }
 
 export interface OrderPayload {

@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 
 // third-party
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import MuiMarkdown from "mui-markdown";
@@ -73,7 +73,7 @@ const ProductCard: React.FC<{
     >
       <Stack direction={"column"} spacing={2}>
         <Typography variant={"h3"} component={"h2"} color={"textPrimary"}>
-          {"￥ " + lo.ceil(price.price / 100, 2).toFixed(2)}
+          {"৳ " + lo.ceil(price.price / 100, 2).toFixed(2)}
         </Typography>
         <MuiMarkdown>{product.content}</MuiMarkdown>
         <Button

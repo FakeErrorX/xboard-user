@@ -26,13 +26,13 @@ const config: DefaultConfigProps = {
   miniDrawer: false,
   container: true,
   themeDirection: "ltr",
-  title: "跨越长城",
+  title: "XBoard",
   title_split: " - ",
   background_url: "https://unsplash.com/random",
-  description: "天下武功 唯快不破",
+  description: "Fast and Secure VPN Service",
   logo: "",
   api: "https://api.proxybd.com",
-  languages: ["zh-CN", "en-US"],
+  languages: ["en"],
   googleAnalytics: {
     measurementId: getGA()
   },

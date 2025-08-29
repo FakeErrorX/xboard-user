@@ -1,5 +1,5 @@
 import axios, { AxiosHeaders } from "axios";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import config from "@/config";
 
 const getBaseUrl = () => {
@@ -40,10 +40,9 @@ instance.interceptors.request.use((config) => {
     if (config.headers instanceof AxiosHeaders) {
       config.headers = config.headers.set("Authorization", token);
     } else {
-      config.headers = {
-        ...config.headers,
+      config.headers = Object.assign({}, config.headers, {
         Authorization: token
-      };
+      });
     }
   }
 

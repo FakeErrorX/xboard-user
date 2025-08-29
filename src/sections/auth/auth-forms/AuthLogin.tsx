@@ -20,7 +20,7 @@ import {
 import * as Yup from "yup";
 import { Formik } from "formik";
 import { Trans, useTranslation } from "react-i18next";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useUnmountedRef } from "ahooks";
 import ReactGA from "react-ga4";
 

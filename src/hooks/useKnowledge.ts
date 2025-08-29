@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 // third-party
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 

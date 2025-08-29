@@ -5,7 +5,7 @@ import { useToggle } from "ahooks";
 import { useTranslation } from "react-i18next";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
-import lo from "lodash-es";
+import * as lo from "lodash-es";
 import { useNavigate } from "react-router-dom";
 
 // material-ui

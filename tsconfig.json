@@ -21,8 +21,8 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "types": ["node"],
-    "typeRoots": ["./types"],
+    "types": ["vite/client"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "baseUrl": "src",
     "downlevelIteration": true,
     "paths": {

@@ -4,11 +4,11 @@ export default interface Coupon {
   id: number;
   code: string;
   name: string;
-  type: 1 | 2; // @enum 1: 金额, 2: 折扣
-  value: number; // 抵扣金额 or 折扣（0-1）
-  show: 0 | 1; // @enum 0: 不显示, 1: 显示
-  limit_use: null | number; // 最大使用次数 @enum null: 不限制, number: 限制次数
-  limit_use_with_user: null | number; // 每个用户可使用次数 @enum null: 不限制, number: 限制次数
+  type: 1 | 2; // @enum 1: amount, 2: discount
+  value: number; // Deduction amount or discount (0-1)
+  show: 0 | 1; // @enum 0: hidden, 1: visible
+  limit_use: null | number; // Maximum usage count @enum null: unlimited, number: limited count
+  limit_use_with_user: null | number; // Max usage per user @enum null: unlimited, number: limited count
   limit_plan_ids: null | string[];
   limit_period: null | PaymentPeriod[];
   started_at: number | null;

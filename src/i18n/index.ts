@@ -4,7 +4,7 @@ import i18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import resources from "./resources";
 
 const i18n = i18next.createInstance({
-  fallbackLng: "zh-CN",
+  fallbackLng: "en",
   resources,
   fallbackNS: "common",
   nsSeparator: "::",
